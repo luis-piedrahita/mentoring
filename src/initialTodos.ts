@@ -1,12 +1,12 @@
-import { Todo } from "./types/types";
+import { Todo } from './types/types';
 
 export const initialTodos: Array<Todo> = [
   {
-    text: "Walk the dog",
-    complete: true,
+    text: 'Walk the dog',
+    complete: true
   },
   {
-    text: "Make app",
-    complete: false,
-  },
+    text: 'Make app',
+    complete: false
+  }
 ];

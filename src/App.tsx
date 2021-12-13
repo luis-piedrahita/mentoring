@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { initialTodos } from "./initialTodos";
-import { TodoList } from "./components/TodoList/TodoList";
-import { AddTodoForm } from "./components/AddTodoForm/AddTodoForm";
-import { Todo, ToggleComplete, AddTodo } from "./types/types";
+import React, { useState } from 'react';
+import { initialTodos } from './initialTodos';
+import { TodoList } from './components/TodoList/TodoList';
+import { AddTodoForm } from './components/AddTodoForm/AddTodoForm';
+import { Todo, ToggleComplete, AddTodo } from './types/types';
 
 const App: React.FC = () => {
   const [todos, setTodos] = useState<Array<Todo>>(initialTodos);
@@ -18,8 +18,7 @@ const App: React.FC = () => {
   };
 
   const addTodo: AddTodo = (newTodo) => {
-    newTodo.trim() !== "" &&
-      setTodos([...todos, { text: newTodo, complete: false }]);
+    newTodo.trim() !== '' && setTodos([...todos, { text: newTodo, complete: false }]);
   };
 
   return (
