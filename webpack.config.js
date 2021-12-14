@@ -16,7 +16,8 @@ module.exports = {
     rules: [
       {
         test: /\.(ts|tsx)$/,
-        loader: 'awesome-typescript-loader'
+        loader: 'babel-loader',
+        exclude: /(node_modules|bower_components)/,
       },
       {
         enforce: 'pre',
